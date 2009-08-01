@@ -1,12 +1,12 @@
+# The roles here model a Tree.  The comments are based on comparing the functionality with 
+# Perl5's XML::LibXML
+#
+# The purpose is not to simulate the DOM, but merely to ensure that all required 
+# functionality exists
+
 # NeedsWork: means it needs work
 # OpWorks: means that it needs to be changed when operators work
 # FeatureFix means it's waiting on another feature (eg. feeds)
-use	v6;
-
-use	EventArray;
-
-# The roles here model a Tree.  The comments are based on comparing the functionality with Perl5's XML::LibXML
-# The purpose is not to simulate the DOM, but merely to ensure that all required functionality exists
 
 # The following functionality is not currently supported (but maybe should be)
 # -	Schemas & Namespaces (can currently simply be done by putting a ':' in the name)
@@ -16,6 +16,10 @@ use	EventArray;
 # -	Adoption (should happen automatically)
 # -	Creation (should happen by calling new, and passing in an owner)
 # -	Other XML-specific stuff (see Tree/Document)
+
+use	v6;
+
+use	EventArray;
 
 role	Tree::Node {...}
 role	Tree::Axes {...}

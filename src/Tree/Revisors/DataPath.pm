@@ -1,3 +1,5 @@
+# Grammar for Datapath.  Waiting on protoregexes.  
+
 grammar	Tree::Grammar {
 	rule Tree	{ <PathExpr>	};
 	rule PathExpr	{ <NodeSpecifier>? <StepExpr>+ | <NodeSpecifier> };

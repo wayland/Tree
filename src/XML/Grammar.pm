@@ -1,3 +1,6 @@
+# This XML grammar is the one used for turning XML into trees.  It's based on Krunen's, and 
+# will hopefully be merged back into something at some point.  
+
 grammar XML::Grammar::Document;
 
 rule TOP {

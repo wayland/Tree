@@ -1,3 +1,5 @@
+# Tree traversal stuff.  See POD below.  
+
 # Using FeatureFix to mark things that don't work due to not being implemented yet
 
 use	v6;

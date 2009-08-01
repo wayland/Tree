@@ -1,5 +1,5 @@
 # This class is basically an array, except when you add things to it, or remove them from 
-# it, it calls the onAdd and onRemove subroutines
+# it, it calls the onAdd and onRemove subroutines.  Has not been tested.  
 
 class	EventArray is Array {
 	has Code &.onAdd;

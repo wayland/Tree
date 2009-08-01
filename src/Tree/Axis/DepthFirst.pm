@@ -1,3 +1,5 @@
+# Does tree traversal depth-first
+
 role	Tree::Axis::depthfirst is Tree::Axis::Base {
 	has $!donefirst = 0;
 

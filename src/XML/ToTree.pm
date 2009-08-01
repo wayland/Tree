@@ -1,3 +1,6 @@
+# This is the action class that is used by an XML Grammar to create XML data structures that 
+# do the Tree roles.  It's currently broken because it's waiting on role predeclaration.  
+
 use	v6;
 
 use	Tree;
