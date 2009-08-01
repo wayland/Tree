@@ -1,0 +1,36 @@
+"Tree" is a collection of modules for manipulating data arranged in tree-like structures.  
+This includes actual trees, but also various kinds of graphs.  It is intended to support 
+XML trees, but could also support filesystem trees, Perl6 Match objects, LDAP directories, 
+and the like.  It should also be able to support Trees with multiple perspectives.  As an 
+example, take this not-XML from Shakespeare:
+
+
+<Speech Character="Antonio">
+    <Line Number="77">I hold the world but as the world, Gratiano;</Line>
+    <Line Number="78">A stage where every man must play a part,</Line>
+    <Line Number="79">And mine a sad one.</Speech>
+<Speech Character="Gratiano">
+                            Let me play the fool:</Line>
+    <Line Number="80">With mirth and laughter let old wrinkles come,</Line>
+    <Line Number="81">And let my liver rather heat with wine</Line>
+...
+</Speech>
+
+The reason the above is not XML is because line 79 does not end before the end of the 
+speech that contains it.  But markup requirements like this are prevalent in the 
+humanities.  The text above can be looked at from the "Speeches" perspective, or the 
+"Lines" perspective.  I'd like to support both these perspectives as part of the Tree 
+modules. 
+
+To get more specific, I envision the following categories of modules:
+-	Core: the interfaces to the basic roles; Tree, Node, Element, Attribute, and 
+	Block 
+-	Input: Gets a tree from somewhere, possibly input text and a grammar, and turns 
+	them into classes that do the Tree roles
+-	Output: turns the tree into XML, filesystem nodes, or whatever
+-	Axes: provides stuff to walk over a tree of any type; think of it as a tree 
+	traversal algorithm
+-	Revisors: Languages for selecting/manipulating trees; could include things like XPath, 
+	glob(), DataPath, and the like
+
+No doubt there will be others as we continue.  
