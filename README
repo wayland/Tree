@@ -22,6 +22,9 @@ humanities.  The text above can be looked at from the "Speeches" perspective, or
 "Lines" perspective.  I'd like to support both these perspectives as part of the Tree 
 modules. 
 
+I'd also like the tree to cope well with the idea that certain nodes represent tables, 
+and that data can be selected from them too.  
+
 To get more specific, I envision the following categories of modules:
 -	Core: the interfaces to the basic roles; Tree, Node, Element, Attribute, and 
 	Block 
