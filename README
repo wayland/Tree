@@ -37,3 +37,8 @@ To get more specific, I envision the following categories of modules:
 	glob(), DataPath, and the like
 
 No doubt there will be others as we continue.  
+
+== License ==
+
+The Tree is released under Artistic 2.0. See LICENSE.
+
